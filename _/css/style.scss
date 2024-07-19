@@ -546,7 +546,46 @@ html {
 						text-indent: -1em;
 					}
 				}
-			}
+				.biz-hour th {
+					/* １番上の線 */
+					/* #A28C63っていうのが色の名前なので、ここをお好みで */
+					border-top: 1px solid #A28C63;
+				}
+				.biz-hour th, .biz-hour td {
+					padding: 10px 8px;
+					text-align: center;
+					/* ２番目以降の線 */
+					/* 色はお好みで */
+					border-bottom: 1px solid #A28C63;
+				}
+				.biz-hour th {
+					font-weight: normal;
+				}			  
+				/* 「土」の文字色 */
+				.biz-hour th.sat {
+					color: #3db2da;
+				}
+				/* 「日」の文字色 */
+				.biz-hour th.sun {
+					color: #e66a6a;
+				}
+				.biz-hour td {
+					font-size: 3.4vw;
+					em {
+						color: #67ac2f;
+					}
+				}
+				.plan-available-day td {
+					font-size: 3.3vw;
+					padding: 10px 6px;
+					text-align: center;
+					/* ２番目以降の線 */
+					/* 色はお好みで */
+					border: 1px solid #A28C63;
+					vertical-align: middle;
+					font-weight:bold;
+				}
+			}			  
 		}
 		#form {
 			padding: 9% 0 4%;
@@ -959,8 +998,17 @@ html {
 						font-size: 15.5px;
 					}
 				}
+				.biz-hour th, .biz-hour td {
+					padding: 10px 15px;
+				}
+				.biz-hour td {
+					font-size: 22px;
+				}
+				.plan-available-day td {
+					font-size: 22px;
+				}
 			}
-		}
+	}
 		#form {
 			h2.h2ttl {
 				font-size: 42px;
